@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Splash(){
-  return();
+  return(
+    <Whiskey/>
+    <Rum/>
+    <Gin/>
+    <Vodka/>
+  );
 }
 
 export default Splash;
