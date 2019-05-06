@@ -2,18 +2,37 @@
 
 ## Description
 
-This was an unorthodox Friday project as we were given the option to study or work on the initial phases of our Capstone project. I chose to split my time between the two activities. In the morning I developed the component structure of my site with pen and paper, as well as brainstormed ideas for how feature would be implemented, the stylings, and researching some of the more unfamiliar processes involved. Photos will be included to map my thought process. I particularly looked at API calls within react. I struggled with API calls before, and want to be sure I have a solid understanding of how the data should be flowing in and out of api calls within React. Just before lunch I actually created this atom project and started building out basic components for the site, very bare bones stuff though. This was mostly just so I could have a repository to commit and come back to next week. After lunch I studied Wordpress site development and an associated program called DiviBuilder. Many of the upcoming internships specify they work with Wordpress, and I had never worked with Wordpress ever before. I was also recently approached by an old friend about doing some work for him at his small media company. The project he mentioned also was a wordpress endeavor using DiviBuilder, and between the offer and the internships I thought looking over Wordpress would be a good studying opportunity.
+This was an unorthodox Friday project as we were given the option to study or work on the initial phases of our Capstone project. I chose to split my time between the two activities. In the morning I developed the component structure of my site with pen and paper, as well as brainstormed ideas for how features would be implemented, the stylings, and researching some of the more unfamiliar processes involved. Photos will be included to map my thought process. I particularly looked at API calls within react. I struggled with API calls before, and want to be sure I have a solid understanding of how the data should be flowing in and out of api calls within React. Just before lunch I actually created this atom project and started building out basic components for the site, very bare bones stuff though. This was mostly just so I could have a repository to commit and come back to next week. After lunch I studied Wordpress site development and an associated program called DiviBuilder. Many of the upcoming internships specify they work with Wordpress, and I had never worked with Wordpress ever before. I was also recently approached by an old friend about doing some work for him at his small media company. The project he mentioned also was a wordpress endeavor using DiviBuilder, and between the offer and the internships I thought looking over Wordpress would be a good studying opportunity.
 
 
 #### By Drew Yoxsimer
 
-##IMAGES
+## HOURLY BREAKDOWN
+
+* **8:30 - 9:30**  Looked over basics of API calls within React.
+* **9:30 - 11:30**  Sketched out multiple versions of component structure as well as display formats with pen and paper.
+* **11:30 - 12:00**   Made new file using a cloned react template and inputted component names.
+* **12:00 - 1:15**   Lunch
+* **1:15 - 1:20**   Git inited over previous file.
+* **1:20 - 3:45**  Watched DiviBuilder and Wordpress youtube tutorials.
+* **3:45 - 4:15**   Filled in bare bones of components as a sort of mental break from the videos.
+* **4:15 - 5:00** Authored README
+
+## IMAGES
+
+![Image1](componentTree.jpg)
+Component Tree
+
+![Image2](displaysample.jpg)
+Sketches of display first draft
+
+![Image3](searchform.jpg)
+Display first draft continued
 
 
 
 
-
-##STUDYING MATERIALS
+## STUDYING MATERIALS
 
 https://www.youtube.com/watch?v=2cbvZf1jIJM : Introduction to Wordpress Tutorial
 https://www.youtube.com/watch?v=UvX3_vlFf5w : Video Explaining Divi Theme
