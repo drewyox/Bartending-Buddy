@@ -10,10 +10,11 @@ function SplashPage(){
   return(
     <div>
       <div className='introText'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>This will be a section that introduces what the site is exactly and how to use it.</p>
       </div>
       <div className='routeContainer'>
         <Whiskey/>
+        // A clickable link to display the chosen drinks category section as well as search within the category and add to the category with a form
         <Rum/>
         <Gin/>
         <Vodka/>
