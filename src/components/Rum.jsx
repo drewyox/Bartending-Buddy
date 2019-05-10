@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Rum(){
+function Rum(
+  <p>Rum Works!</p>
+){
   return();
 }
 

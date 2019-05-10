@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './Header';
-import Splash from './Splash';
+import SplashPage from './SplashPage';
 
 function App(){
   return(
     <Header/>
-    <Splash/>
+    <SplashPage/>
   );
 }
 

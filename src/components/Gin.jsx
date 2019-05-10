@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Gin(){
+function Gin(
+  <p>Gin Works!</p>
+){
   return();
 }
 

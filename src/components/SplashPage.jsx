@@ -1,12 +1,15 @@
 import React from 'react';
 
-function Splash(){
+function SplashPage(){
   return(
-    <Whiskey/>
-    <Rum/>
-    <Gin/>
-    <Vodka/>
+    <div>
+      <p>Spalsh Works!</p>
+      <Whiskey/>
+      <Rum/>
+      <Gin/>
+      <Vodka/>
+    </div>
   );
 }
 
-export default Splash;
+export default SplashPage;

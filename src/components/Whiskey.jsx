@@ -1,7 +1,9 @@
 import React from 'react';
 
 function Whiskey(){
-  return();
+  return(
+    <p>Vodka Works!</p>
+  );
 }
 
 export default Whiskey;
