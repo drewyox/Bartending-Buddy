@@ -22,7 +22,13 @@ d
 ## HOURLY BREAKDOWN WEEK 2
 
 * **8:15 - 8:45** Re-drawing component structure to better show state and form usage.
-
+* **8:45 - 9:30** Created rest of the basic components.
+* **9:30 - 11:00** Weeded out syntax errors and reviewed Redux instructional youtube video linked below.
+* **11:00 - 12:00** Started including classNames to conect my mental map with in code examples.
+* **12:00 - 1:00** Lunch
+* **1:00 - 2:45** Worked with figma for the first time to create design for homepage.
+* **2:45 - 4:00** Wrote and created drinks component with prototype for Prop Types included based on sketches. Also created and skeleton-ed a form component for creating drink entries .
+* **4:00 - 4:30** Updated README
 ## IMAGES
 
 ![Image1](componentTree.jpg)
@@ -45,6 +51,7 @@ Display built out using figma, first draft of more robust designs.
 https://www.youtube.com/watch?v=2cbvZf1jIJM : Introduction to Wordpress Tutorial
 https://www.youtube.com/watch?v=UvX3_vlFf5w : Video Explaining Divi Theme
 
+https://www.youtube.com/watch?v=3sjMRS1gJys : Redux Explination video
 
 ## MVP FOR CAPSTONE
 
