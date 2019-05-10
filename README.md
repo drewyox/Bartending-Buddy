@@ -34,6 +34,9 @@ Sketches of display first draft
 ![Image3](searchform.jpg)
 Display first draft continued
 
+![Image4](Untitled.pdf)
+Display built out using figma, first draft of more robust designs.
+
 
 
 
