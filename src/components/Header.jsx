@@ -1,13 +1,14 @@
 import React from 'react';
+import '../sass/header.scss';
 
 function Header(
 ){
   return(
     <div>
-      <div>
-        <p>Home Icon/button<p>
+      <div className='header'>
+        <p>Home Icon/button</p>
         <p>Search Bar</p>
-      <div>
+      </div>
     </div>
 
   );
