@@ -4,10 +4,10 @@
 
 This was an unorthodox Friday project as we were given the option to study or work on the initial phases of our Capstone project. I chose to split my time between the two activities. In the morning I developed the component structure of my site with pen and paper, as well as brainstormed ideas for how features would be implemented, the stylings, and researching some of the more unfamiliar processes involved. Photos will be included to map my thought process. I particularly looked at API calls within react. I struggled with API calls before, and want to be sure I have a solid understanding of how the data should be flowing in and out of api calls within React. Just before lunch I actually created this atom project and started building out basic components for the site, very bare bones stuff though. This was mostly just so I could have a repository to commit and come back to next week. After lunch I studied Wordpress site development and an associated program called DiviBuilder. Many of the upcoming internships specify they work with Wordpress, and I had never worked with Wordpress ever before. I was also recently approached by an old friend about doing some work for him at his small media company. The project he mentioned also was a wordpress endeavor using DiviBuilder, and between the offer and the internships I thought looking over Wordpress would be a good studying opportunity.
 
-
+d
 #### By Drew Yoxsimer
 
-## HOURLY BREAKDOWN
+## HOURLY BREAKDOWN WEEK 1
 
 * **8:30 - 9:30**  Looked over basics of API calls within React.
 * **9:30 - 11:30**  Sketched out multiple versions of component structure as well as display formats with pen and paper.
@@ -17,6 +17,11 @@ This was an unorthodox Friday project as we were given the option to study or wo
 * **1:20 - 3:45**  Watched DiviBuilder and Wordpress youtube tutorials.
 * **3:45 - 4:15**   Filled in bare bones of components as a sort of mental break from the videos.
 * **4:15 - 5:00** Authored README
+
+
+## HOURLY BREAKDOWN WEEK 2
+
+* **8:15 - 8:45** Re-drawing component structure to better show state and form usage.
 
 ## IMAGES
 
