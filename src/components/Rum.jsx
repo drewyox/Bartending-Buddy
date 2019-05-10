@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Rum(
-  <p>Rum Works!</p>
 ){
-  return();
+  return(
+    <p>Rum Works!</p>
+
+  );
 }
 
 export default Rum;

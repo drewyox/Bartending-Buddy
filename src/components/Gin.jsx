@@ -1,9 +1,10 @@
 import React from 'react';
 
 function Gin(
-  <p>Gin Works!</p>
 ){
-  return();
+  return(
+  <p>Gin Works!</p>
+);
 }
 
 export default Gin;

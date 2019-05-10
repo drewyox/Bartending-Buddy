@@ -4,8 +4,10 @@ import SplashPage from './SplashPage';
 
 function App(){
   return(
-    <Header/>
-    <SplashPage/>
+    <div>
+      <Header/>
+      <SplashPage/>
+    </div>
   );
 }
 

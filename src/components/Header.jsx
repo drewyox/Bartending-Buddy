@@ -1,9 +1,16 @@
 import React from 'react';
 
 function Header(
-  <p>Header Works!</p>
 ){
-  return();
+  return(
+    <div>
+      <div>
+        <p>Home Icon/button<p>
+        <p>Search Bar</p>
+      <div>
+    </div>
+
+  );
 }
 
 export default Header;
