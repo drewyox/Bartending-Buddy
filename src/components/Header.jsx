@@ -9,7 +9,7 @@ function Header(
       <div className='header'>
         <div>
           <p>Home Icon/button</p>
-          <Link to="/"> Home </Link>
+          
         </div>
         <p>Search Bar</p>
       </div>
