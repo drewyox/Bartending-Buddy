@@ -1,12 +1,16 @@
 import React from 'react';
 import '../sass/header.scss';
+import Link from 'react-router-dom';
 
 function Header(
 ){
   return(
     <div>
       <div className='header'>
-        <p>Home Icon/button</p>
+        <div>
+          <p>Home Icon/button</p>
+          <Link to="/"> Home </Link>
+        </div>
         <p>Search Bar</p>
       </div>
     </div>
