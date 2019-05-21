@@ -1,6 +1,7 @@
 import React from 'react';
 import '../sass/splash.scss';
 import barBackground from '../assets/bar.jpg';
+import { Link } from 'react-router-dom';
 
 function SplashPage(){
   var backgroundBar = {
@@ -14,12 +15,17 @@ function SplashPage(){
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    marginTop: '13vh',
   };
   var columnStyleR = {
+    marginRight: '40vw',
+    marginBottom: '10vw',
+    textDecoration: 'none',
 
   };
   var columnStyleL = {
-
+    marginLeft: '40vw',
+    marginBottom: '10vw',
   };
   return(
     <div>
@@ -29,16 +35,16 @@ function SplashPage(){
         </div>
       </div>
       <div style={columnStyle}>
-        <div>
-        Link to Drink Section Gin
+        <div style={columnStyleR}>
+        <Link to='/popular'>Popular</Link>
         </div>
-        <div>
+        <div style={columnStyleL}>
         Link to Drink Section whiskey
         </div>
-        <div>
+        <div style={columnStyleR}>
         Link to Drink Section Rum
         </div>
-        <div>
+        <div style={columnStyleL}>
         Link to Drink Section Vodka
         </div>
       </div>
