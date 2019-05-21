@@ -1,6 +1,5 @@
 import React from 'react';
 import '../sass/header.scss';
-import Link from 'react-router-dom';
 import SearchForm from './SearchForm';
 
 function Header(

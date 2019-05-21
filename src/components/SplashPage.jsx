@@ -36,16 +36,16 @@ function SplashPage(){
       </div>
       <div style={columnStyle}>
         <div style={columnStyleR}>
-        <Link to='/popular'>Popular</Link>
+          <Link to='/popular'>Popular</Link>
         </div>
         <div style={columnStyleL}>
-        Link to Drink Section whiskey
+        Contribute
         </div>
         <div style={columnStyleR}>
-        Link to Drink Section Rum
+        Search
         </div>
         <div style={columnStyleL}>
-        Link to Drink Section Vodka
+        User Library
         </div>
       </div>
     </div>
