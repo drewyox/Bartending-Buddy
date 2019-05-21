@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import SplashPage from './SplashPage';
-import SearchForm from './SearchForm';
 import Whiskey from './Whiskey';
 import Gin from './Gin';
 import Rum from './Rum';
@@ -13,7 +12,6 @@ class App extends React.Component{
     return(
       <div>
         <Header />
-        <SearchForm />
         <Switch>
           <Route exact path='/' component={SplashPage} />
           <Route path='/gin' component={Gin} />

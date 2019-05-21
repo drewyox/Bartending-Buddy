@@ -1,6 +1,7 @@
 import React from 'react';
 import '../sass/header.scss';
 import Link from 'react-router-dom';
+import SearchForm from './SearchForm';
 
 function Header(
 ){
@@ -9,9 +10,8 @@ function Header(
       <div className='header'>
         <div>
           <p>Home Icon/button</p>
-          
         </div>
-        <p>Search Bar</p>
+        <SearchForm />
       </div>
     </div>
 

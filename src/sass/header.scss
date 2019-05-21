@@ -1,6 +1,9 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  border-bottom: solid 1px black;
+  background-color: #c9ab58;
 }

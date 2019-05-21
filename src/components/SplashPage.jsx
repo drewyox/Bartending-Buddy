@@ -1,14 +1,18 @@
 import React from 'react';
 import '../sass/splash.scss';
+import barBackground from '../assets/bar.jpg';
 
 function SplashPage(){
+  var backgroundBar = {
+    height: '80vh',
+    backgroundImage: `url(${barBackground})`,
+    display: 'flex',
+    alignItems: 'center',
+  }
   return(
-    <div>
+    <div style={backgroundBar}>
       <div className='introText'>
-        <p>This will be a section that introduces what the site is exactly and how to use it.</p>
-      </div>
-      <div className='routeContainer'>
-
+        <p>Welcome to The Bar, a place where you can search, upload and store your very own creative concoctions.</p>
       </div>
     </div>
   );
