@@ -5,6 +5,7 @@ import barBackground from '../assets/bar.jpg';
 function SplashPage(){
   var backgroundBar = {
     height: '80vh',
+    width: '100%',
     backgroundImage: `url(${barBackground})`,
     display: 'flex',
     alignItems: 'center',
