@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import PropTypes from 'prop-types';
 import SplashPage from './SplashPage';
+import SearchForm from './SearchForm';
 import Whiskey from './Whiskey';
 import Popular from './Popular';
 import Rum from './Rum';
@@ -18,37 +19,16 @@ class App extends React.Component{
   }
 
 
-  componentWillMount(){
-    this.searchByIngredient();
-  }
-
-  searchByIngredient() {
-    let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni';
-    fetch(url).then(response => response.json()).then(
-      (json) => {
-        let drinky = json.drinks;
-        console.log(json);
-        Object.keys(drinky).forEach((element) => {
-          console.log(drinky[element].idDrink);
-        })
-        }
-    );
-  }
-
-  searchByName(){
-
-  }
-
-
 
 
   render(){
     return(
       <div>
-        <Header />
+        <Header searchByIngredient = {this.searchByIngredient}/>
         <Switch>
           <Route exact path='/' component={SplashPage} />
           <Route path='/popular' component={Popular} />
+          <Route path='/search' component={SearchForm}/>
           <Route path='/rum' component={Rum} />
           <Route path='/vodka' component={Vodka} />
           <Route path='/whiskey' component={Whiskey} />
