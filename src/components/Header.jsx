@@ -1,6 +1,7 @@
 import React from 'react';
 import '../sass/header.scss';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 function Header(){
 
@@ -10,7 +11,7 @@ function Header(){
     <div>
       <div className='header'>
         <div>
-          <p>Home Icon/button</p>
+          <Link to='/'>Home</Link>
         </div>
       </div>
     </div>

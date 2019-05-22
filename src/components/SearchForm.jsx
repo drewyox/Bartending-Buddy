@@ -15,16 +15,16 @@ class SearchForm extends React.Component{
 
 
   resetArrayonIngredient() {
-    this.setState({nameResults: [] })
+    this.setState({nameResults: [] });
   }
 
   resetArrayonName() {
-    this.setState({ingredientResults: []})
+    this.setState({ingredientResults: []});
   }
 
 
   searchByIngredient(input){
-    this.setState({ingredientResults: []})
+    this.setState({ingredientResults: []});
     let inputVal = input;
     let dummyArray = [];
     let url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${inputVal}`;
@@ -74,11 +74,11 @@ class SearchForm extends React.Component{
             <input type='text' id='inputValue' ref='ingField'/>
           </label>
           <button type='submit' onClick={() =>{
-              console.log(document.getElementById('inputValue').value);
+            console.log(document.getElementById('inputValue').value);
             let input = document.getElementById('inputValue').value;
             this.searchByIngredient(input);
             this.clearField();
-            }}>Test</button>
+          }}>Test</button>
         </form>
         <h2>Or</h2>
         <form>
@@ -88,9 +88,9 @@ class SearchForm extends React.Component{
           </label>
           <button type='submit' onClick={() =>{
             console.log(document.getElementById('inputValueName').value);
-          let input = document.getElementById('inputValueName').value;
-          this.searchByName(input);
-          this.clearField();
+            let input = document.getElementById('inputValueName').value;
+            this.searchByName(input);
+            this.clearField();
           }}>Test</button>
         </form>
         <SearchResults nameArray={this.state.nameResults} ingredientArray={this.state.ingredientResults}/>

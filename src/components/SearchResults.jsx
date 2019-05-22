@@ -49,14 +49,14 @@ function SearchResults(props){
             measure14={drink.strMeasure14}
             measure15={drink.strMeasure15}
             instructions={drink.strInstructions}
-            key={drink.idDrink} />
+            key={drink.idDrink} />;
 
 
           console.log(drink);
         })}
-        </div>
+      </div>
 
-        <div>
+      <div>
         {Object.keys(props.ingredientArray).map(function(drinkId){
           var drink = props.ingredientArray[drinkId];
           return <DrinkByIngredient
@@ -92,19 +92,19 @@ function SearchResults(props){
             measure14={drink.strMeasure14}
             measure15={drink.strMeasure15}
             instructions={drink.strInstructions}
-            key={drink.idDrink} />
+            key={drink.idDrink} />;
         })}
       </div>
     </div>
   );
-};
+}
 
 SearchResults.PropTypes = {
   nameArray: PropTypes.array,
   ingredientArray: PropTypes.array,
-}
+};
 
-export default SearchResults
+export default SearchResults;
 
 
 //let displayedResultsByName

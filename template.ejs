@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
   <body style="margin: 0; padding: 0">
     <% if (htmlWebpackPlugin.options.appMountId) { %>
       <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <% } %>
   </body>
 </html>

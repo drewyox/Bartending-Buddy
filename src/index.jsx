@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/src/sass/aos.scss';
 import { HashRouter } from 'react-router-dom';
 
+
 const render = (Component) => {
   AOS.init();
   AOS.refresh();

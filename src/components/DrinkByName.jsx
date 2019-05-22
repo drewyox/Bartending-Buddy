@@ -72,6 +72,6 @@ DrinkByName.PropTypes = {
   measure14: PropTypes.string,
   measure15: PropTypes.string,
   key: PropTypes.number
-}
+};
 
 export default DrinkByName;
