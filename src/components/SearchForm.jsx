@@ -9,6 +9,17 @@ class SearchForm extends React.Component{
       ingredientResults:[],
       nameResults:[],
     };
+    this.searchByIngredient = this.searchByIngredient.bind(this);
+    this.searchByName = this.searchByName.bind(this);
+  }
+
+
+  resetArrayonIngredient() {
+    this.setState({nameResults: [] })
+  }
+
+  resetArrayonName() {
+    this.setState({ingredientResults: []})
   }
 
 
@@ -28,6 +39,7 @@ class SearchForm extends React.Component{
         console.log(this.state.ingredientResults);
       }
     );
+    this.resetArrayonIngredient();
   }
 
   searchByName(input){
@@ -43,7 +55,14 @@ class SearchForm extends React.Component{
         console.log(this.state.nameResults);
       }
     );
+    this.resetArrayonName();
   }
+
+  clearField(){
+    this.refs.ingField.value='';
+    this.refs.nameField.value='';
+  }
+
 
   render(){
 
@@ -52,24 +71,26 @@ class SearchForm extends React.Component{
         <form>
           <label>
           Search By Ingredient:
-            <input type='text' id='inputValue'/>
+            <input type='text' id='inputValue' ref='ingField'/>
           </label>
           <button type='submit' onClick={() =>{
               console.log(document.getElementById('inputValue').value);
             let input = document.getElementById('inputValue').value;
             this.searchByIngredient(input);
+            this.clearField();
             }}>Test</button>
         </form>
         <h2>Or</h2>
         <form>
           <label>
           Search By Name:
-            <input type='text' id='inputValueName'/>
+            <input type='text' id='inputValueName' ref='nameField'/>
           </label>
           <button type='submit' onClick={() =>{
             console.log(document.getElementById('inputValueName').value);
           let input = document.getElementById('inputValueName').value;
           this.searchByName(input);
+          this.clearField();
           }}>Test</button>
         </form>
         <SearchResults nameArray={this.state.nameResults} ingredientArray={this.state.ingredientResults}/>

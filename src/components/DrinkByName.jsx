@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Drinks(props) {
+function DrinkByName(props) {
   return(
     <div>
       <h2>{props.name}</h2>
@@ -38,7 +38,7 @@ function Drinks(props) {
   );
 }
 
-Drinks.PropTypes = {
+DrinkByName.PropTypes = {
   name: PropTypes.string,
   instructions: PropTypes.string,
   ingredient1: PropTypes.string,
@@ -74,4 +74,4 @@ Drinks.PropTypes = {
   key: PropTypes.number
 }
 
-export default Drinks;
+export default DrinkByName;

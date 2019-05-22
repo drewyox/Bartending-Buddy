@@ -30,6 +30,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-materialize": "^3.3.1",
     "react-router-dom": "^4.0.0",
     "style-loader": "^0.23.1",
     "styled-jsx": "^3.2.1",

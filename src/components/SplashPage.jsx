@@ -35,6 +35,7 @@ function SplashPage(){
         </div>
       </div>
       <div style={columnStyle}>
+        <Link to='/search'>Search</Link>
         <div style={columnStyleR}>
           <Link to='/popular'>Popular</Link>
         </div>
@@ -42,9 +43,6 @@ function SplashPage(){
         Contribute
         </div>
         <div style={columnStyleR}>
-        Search
-        </div>
-        <div style={columnStyleL}>
         User Library
         </div>
       </div>
