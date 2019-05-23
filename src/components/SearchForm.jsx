@@ -66,33 +66,67 @@ class SearchForm extends React.Component{
 
   render(){
 
+    var text = {
+      width: '60%',
+      marginTop: '3vh',
+      marginBottom: '4vh',
+      marginLeft: '10vh',
+
+    }
+
+    var textRefine = {
+      fontWeight: 'lighter'
+    }
+
+var row = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-around',
+  marginTop: '8vh',
+  marginBottom: '10vh'
+}
+
+var border= {
+  border: '1px solid grey',
+  borderRadius: '3px',
+  padding: '10px',
+  width: '35%',
+
+}
     return(
       <div>
-        <form>
-          <label>
-          Search By Ingredient:
-            <input type='text' id='inputValue' ref='ingField'/>
-          </label>
-          <button type='submit' onClick={() =>{
-            console.log(document.getElementById('inputValue').value);
-            let input = document.getElementById('inputValue').value;
-            this.searchByIngredient(input);
-            this.clearField();
-          }}>Test</button>
-        </form>
-        <h2>Or</h2>
-        <form>
-          <label>
-          Search By Name:
-            <input type='text' id='inputValueName' ref='nameField'/>
-          </label>
-          <button type='submit' onClick={() =>{
-            console.log(document.getElementById('inputValueName').value);
-            let input = document.getElementById('inputValueName').value;
-            this.searchByName(input);
-            this.clearField();
-          }}>Test</button>
-        </form>
+        <div style={text}>
+          <h3 style={textRefine}>Looking to expand your repertoire? Search by ingredient and then look up a name that grabs your eye!</h3><br></br>
+          <h5 style={textRefine}>Or if you know what you're looking for, just search the name of a drink!</h5>
+        </div>
+        <div style={row}>
+          <form style={border}>
+              <label>
+              Search By Ingredient:
+                <input type='text' id='inputValue' ref='ingField'/>
+              </label>
+              <button type='submit' onClick={() =>{
+                console.log(document.getElementById('inputValue').value);
+                let input = document.getElementById('inputValue').value;
+                this.searchByIngredient(input);
+                this.clearField();
+              }}>Search!</button>
+          </form>
+
+          <h4>Or</h4>
+          <form style={border}>
+            <label>
+            Search By Name:
+              <input type='text' id='inputValueName' ref='nameField'/>
+            </label>
+            <button type='submit' onClick={() =>{
+              console.log(document.getElementById('inputValueName').value);
+              let input = document.getElementById('inputValueName').value;
+              this.searchByName(input);
+              this.clearField();
+            }}>Search!</button>
+          </form>
+        </div>
         <SearchResults nameArray={this.state.nameResults} ingredientArray={this.state.ingredientResults}/>
       </div>
     );

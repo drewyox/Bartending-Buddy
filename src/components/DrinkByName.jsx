@@ -2,38 +2,111 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function DrinkByName(props) {
+
+  var ing = {
+    fontSize: '1.1em',
+    fontWeight: 'lighter'
+  }
+
+  var row = {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    marginBottom: '0px',
+    justifyContent: 'center'
+
+  }
+
+  var column = {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '30%',
+    padding: '15px'
+  }
+
+  var big = {
+    fontSize: '3em'
+  }
+
+  var info = {
+    fontSize: '1.2em'
+  }
+
+  var imgFor = {
+    height: '300px',
+    width: '300px',
+  }
+
+  var mesSur = {
+    fontSize: '.8em',
+    fontWeight: 'bold',
+    paddingLeft: '4px'
+  }
+
+
   return(
-    <div>
-      <h2>{props.name}</h2>
-      <h4>{props.ingredient1}</h4>
-      <h4>{props.measure1}</h4>
-      <h4>{props.ingredient2}</h4>
-      <h4>{props.measure2}</h4>
-      <h4>{props.ingredient3}</h4>
-      <h4>{props.measure3}</h4>
-      <h4>{props.ingredient4}</h4>
-      <h4>{props.measure4}</h4>
-      <h4>{props.ingredient5}</h4>
-      <h4>{props.measure5}</h4>
-      <h4>{props.ingredient6}</h4>
-      <h4>{props.measure6}</h4>
-      <h4>{props.ingredient7}</h4>
-      <h4>{props.measure7}</h4>
-      <h4>{props.ingredient8}</h4>
-      <h4>{props.measure8}</h4>
-      <h4>{props.ingredient9}</h4>
-      <h4>{props.measure9}</h4>
-      <h4>{props.ingredient10}</h4>
-      <h4>{props.measure10}</h4>
-      <h4>{props.ingredient12}</h4>
-      <h4>{props.measure12}</h4>
-      <h4>{props.ingredient13}</h4>
-      <h4>{props.measure13}</h4>
-      <h4>{props.ingredient14}</h4>
-      <h4>{props.measure14}</h4>
-      <h4>{props.ingredient15}</h4>
-      <h4>{props.measure15}</h4>
-      <h3>{props.instructions}</h3>
+    <div style={row} className='z-depth-3'>
+      <div style={column}>
+        <p style={big}>{props.name}</p>
+        <p style={info}>{props.instructions} </p>
+      </div>
+
+      <div style={column}>
+        <div style={row}>
+          <p style={ing}>{props.ingredient1} </p>
+          <p style={mesSur}> {props.measure1}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient2} </p>
+          <p style={mesSur}> {props.measure2}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient3} </p>
+          <p style={mesSur}> {props.measure3}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient4} </p>
+          <p style={mesSur}> {props.measure4}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient5} </p>
+          <p style={mesSur}> {props.measure5}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient6} </p>
+          <p style={mesSur}> {props.measure6}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient7} </p>
+          <p style={mesSur}> {props.measure7}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient8} </p>
+          <p style={mesSur}> {props.measure8}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient9} </p>
+          <p style={mesSur}> {props.measure9}</p>
+        </div>
+
+        <div style={row}>
+          <p style={ing}>{props.ingredient10} </p>
+          <p style={mesSur}> {props.measure10}</p>
+        </div>
+
+      </div>
+      <div style={column}>
+        <img className='valign-wrapper' style={imgFor} src={props.picture}></img>
+      </div>
+
     </div>
   );
 }
@@ -51,11 +124,6 @@ DrinkByName.PropTypes = {
   ingredient8: PropTypes.string,
   ingredient9: PropTypes.string,
   ingredient10: PropTypes.string,
-  ingredient11: PropTypes.string,
-  ingredient12: PropTypes.string,
-  ingredient13: PropTypes.string,
-  ingredient14: PropTypes.string,
-  ingredient15: PropTypes.string,
   measure1: PropTypes.string,
   measure2: PropTypes.string,
   measure3: PropTypes.string,
@@ -66,11 +134,7 @@ DrinkByName.PropTypes = {
   measure8: PropTypes.string,
   measure9: PropTypes.string,
   measure10: PropTypes.string,
-  measure11: PropTypes.string,
-  measure12: PropTypes.string,
-  measure13: PropTypes.string,
-  measure14: PropTypes.string,
-  measure15: PropTypes.string,
+  picture: PropTypes.string,
   key: PropTypes.number
 };
 

@@ -49,6 +49,7 @@ function SearchResults(props){
             measure14={drink.strMeasure14}
             measure15={drink.strMeasure15}
             instructions={drink.strInstructions}
+            picture={drink.strDrinkThumb}
             key={drink.idDrink} />;
 
 

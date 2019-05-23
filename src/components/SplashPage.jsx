@@ -18,40 +18,41 @@ function SplashPage(){
     alignItems: 'center',
     marginTop: '13vh',
     marginBottom: '10vh',
+    fontSize: '1.5em'
   };
   var columnStyleR = {
     marginRight: '40vw',
     marginBottom: '10vw',
-    textDecoration: 'none',
+    fontSize: '1.5em',
+    borderBottom: '1px solid black'
 
   };
   var columnStyleL = {
     marginLeft: '40vw',
     marginBottom: '10vh',
+    fontSize: '1.5em',
+    borderBottom: '1px solid black'
   };
 
   var titleStyle = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '8em',
+    fontSize: '6em',
     fontFamily: 'Brush Script MT , cursive',
     color: 'white',
     backgroundColor:'rgba(0,0,0,.63)',
     height: '200px',
     paddingLeft: '20px',
-    paddingRight: '20px'
-  }
-    var fix = {
-      display: 'flex',
-      alignItems: 'start',
-    }
-
-
-  var round = {
-    borderRadius: '10px',
+    paddingRight: '20px',
+    borderRadius: '15px'
   }
 
+
+  var big ={
+    fontSize: '2em',
+    fontWeight: 'lighter'
+  }
 
   return(
     <div>
@@ -63,9 +64,15 @@ function SplashPage(){
         </div>
       </div>
       <div style={columnStyle}>
-        <span><Link to='/search'>Search</Link></span>
-        <Link to='/dashboard'>Drink Library</Link>
-        <Link to='/contribute'>Contribute</Link>
+        <div style={columnStyleR}>
+          <span style={big}><Link to='/search'>Search</Link></span><p> through our database of established drink  recipes!</p>
+        </div>
+        <div style={columnStyleL}>
+          <p>Browse our extensive user created</p> <span style={big}><Link to='/dashboard'>Drink Library</Link></span>
+        </div>
+        <div style={columnStyleR}>
+          <Link style={big} to='/contribute'>Contribute</Link><p> to our ever growing libray of unique drinks!</p>
+        </div>
       </div>
     </div>
   );
