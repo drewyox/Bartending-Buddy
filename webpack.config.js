@@ -75,6 +75,7 @@ module.exports = {
           ],
           plugins: [
             "react-hot-loader/babel",
+            "transform-object-rest-spread",
             "styled-jsx/babel"
           ]
         }
