@@ -15,6 +15,7 @@ const Navbar = () => {
         <Link to='/' className='brand-logo'>Home</Link>
         <NavLink style={space} to='/dashboard' className='right'>Drinks Library</NavLink>
         <NavLink style={space} to='/search' className='right'>Search Drinks</NavLink>
+        <NavLink style={space} to='/contribute' className='right'>Create Recipe</NavLink>
       </div>
     </nav>
   );
