@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class SignUp extends Component {
   constructor(){
@@ -8,14 +8,14 @@ class SignUp extends Component {
       password: '',
       firstName:'',
       lastName:''
-    }
+    };
     this.handleChange= this.handleChange.bind(this);
     this.handleSubmit= this.handleSubmit.bind(this);
   }
   handleChange(e){
     this.setState({
       [e.target.id]: e.target.value
-    })
+    });
   }
   handleSubmit(e){
     e.preventDefault();
@@ -47,8 +47,8 @@ class SignUp extends Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
-export default SignUp
+export default SignUp;

@@ -9,22 +9,24 @@ import {Switch, Route } from 'react-router-dom';
 import RecipeDetails from '../recipe/RecipeDetails';
 import SignIn from '../auth/SignIn';
 import SignUp from '../auth/SignUp';
+import CreateRecipe from '../recipe/CreateRecipe';
 
 function App(){
 
-    return(
-      <div>
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={SplashPage} />
-          <Route path='/dashboard' component={Dashboard} />
-          <Route path='/search' component={SearchForm}/>
-          <Route path='/signin' component={SignIn} />
-          <Route path='/signup' component={SignUp} />
-          <Route path='/recipe/:id' component={RecipeDetails} />
-        </Switch>
-      </div>
-    );
-  }
+  return(
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={SplashPage} />
+        <Route path='/dashboard' component={Dashboard} />
+        <Route path='/search' component={SearchForm}/>
+        <Route path='/signin' component={SignIn} />
+        <Route path='/signup' component={SignUp} />
+        <Route path='/recipe/:id' component={RecipeDetails} />
+        <Route path='/contribute' component={CreateRecipe} />
+      </Switch>
+    </div>
+  );
+}
 
 export default App;

@@ -3,12 +3,14 @@ import RecipeSummary from './RecipeSummary';
 
 
 
-const RecipeList = () => {
+function RecipeList({recipes}){
   return(
     <div className='recipe-list section'>
-      <RecipeSummary />
-      <RecipeSummary />
-      <RecipeSummary />
+      { recipes && recipes.map(recipe => {
+        return (
+          <RecipeSummary recipe={recipe} key={recipe.id} />
+        )
+      })}
     </div>
   );
 };
