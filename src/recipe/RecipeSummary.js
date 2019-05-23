@@ -2,14 +2,20 @@ import React from 'react';
 
 
 function RecipeSummary({recipe}){
-  return(
-    <div className='card z-depth-0 recipe-summary'>
-      <div className='card-content grey-text text-darken-3'>
-        <span className='card-title'>{recipe.title}</span>
+  var blockquote={
+      paddingLeft: '1vw',
+      borderLeft: '5px solid #64b5f6'
+    }
 
-        <p>Posted by: BLANK </p>
-        <p className='grey-text'>Date</p>
-      </div>
+    var divide={
+      borderBottom: '1px solid #000'
+    }
+  return(
+    <div style={divide} className='card z-depth-0 recipe-summary'>
+        <div style={blockquote} className='card-content grey-text text-darken-3'>
+          <span className='card-title'>{recipe.title}</span>
+        </div>
+
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Notifications from './Notifications';
 import RecipeList from '../recipe/RecipeList';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -15,7 +14,6 @@ class Dashboard extends Component {
       <div className='dashboard container'>
         <div className='row'>
           <div className='col s12 m6'><RecipeList recipes={recipes}/></div>
-          <div className='col s12 m6 offset-m1'><Notifications /></div>
         </div>
       </div>
     );

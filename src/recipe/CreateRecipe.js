@@ -76,6 +76,11 @@ class CreateRecipe extends Component {
             <textarea name='' id='content' cols='30' rows='10' className='materialize-textarea' onChange={this.handleChange}></textarea>
           </div>
 
+          <div className="input-field">
+            <label htmlFor="title">Instructions for Preparing</label>
+            <input type="text" id='instructions' onChange={this.handleChange} />
+          </div>
+
           <div style={row}>
             <div className="input-field">
               <label htmlFor="title">Ingredient 1</label>
@@ -238,10 +243,7 @@ class CreateRecipe extends Component {
               <input type="text" id='me15' onChange={this.handleChange} />
             </div>
           </div>
-          <div className="input-field">
-            <label htmlFor="title">Instructions for Preparing</label>
-            <input type="text" id='instructions' onChange={this.handleChange} />
-          </div>
+
 
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Create</button>
