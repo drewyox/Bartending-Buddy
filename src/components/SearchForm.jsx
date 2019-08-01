@@ -58,7 +58,24 @@ idHelper(input){
   console.log(dummyArray);
 }
 
+randomDrink(){
+  let dummyArrayName = [];
+  let url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`;
+  fetch(url).then(response => response.json()).then(
+    (json) => {
+      let drinkyPoo = json.drinks;
+      Object.keys(drinkyPoo).forEach((element) => {
+        dummyArrayName.push(drinkyPoo[element]);
+      });
+      this.setState({nameResults: dummyArrayName});
+      console.log(this.state.ingredientResults);
+    }
+  );
+  this.resetArrayonIngredient();
+}
+
   searchByName(input){
+    this.resetArrayonName();
     let dummyArrayName = [];
     let url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
     fetch(url).then(response => response.json()).then(
@@ -71,7 +88,6 @@ idHelper(input){
         console.log(this.state.nameResults);
       }
     );
-    this.resetArrayonName();
   }
 
   clearField(){
@@ -94,21 +110,39 @@ idHelper(input){
       fontWeight: 'lighter'
     }
 
-var row = {
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-around',
-  marginTop: '8vh',
-  marginBottom: '10vh'
-}
+    var row = {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginTop: '8vh',
+      marginBottom: '5vh'
+    }
 
-var border= {
-  border: '1px solid grey',
-  borderRadius: '3px',
-  padding: '10px',
-  width: '35%',
+    var border= {
+      border: '1px solid grey',
+      borderRadius: '3px',
+      padding: '10px',
+      width: '35%',
+    }
 
-}
+    var random = {
+      backgroundColor: '#64b5f6',
+      padding: '5px 10px 5px 10px',
+      color: 'white',
+    }
+
+    var search = {
+      backgroundColor: '#64b5f6',
+      color: 'white'
+    }
+    var column = {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      width: '100%',
+      alignItems: 'center',
+      marginBottom: '7vh',
+    }
     return(
       <div>
         <div style={text}>
@@ -120,13 +154,20 @@ var border= {
             Search By Name:
               <input type='text' id='inputValueName' ref='nameField'/>
             </label>
-            <button type='submit' onClick={() =>{
+            <button style={search} type='submit' onClick={() =>{
               console.log(document.getElementById('inputValueName').value);
               let input = document.getElementById('inputValueName').value;
               this.searchByName(input);
               this.clearField();
             }}>Search!</button>
           </form>
+        </div>
+        <div style={column}>
+          <p>Need inspiration?</p>
+          <button style={random} onClick={() =>{
+              this.randomDrink();
+              this.clearField();
+            }}>Find Random Cocktail!</button>
         </div>
         <SearchResults nameArray={this.state.nameResults} ingredientArray={this.state.ingredientResults}/>
       </div>

@@ -22,6 +22,7 @@ function RecipeList({recipes}){
     backgroundColor: '#64b5f6',
     marginLeft: '0px'
   }
+  
   return(
     <div>
       <h3 style={space}>Click a drink below to learn more!</h3>

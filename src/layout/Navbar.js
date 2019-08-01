@@ -13,9 +13,9 @@ const Navbar = () => {
     <nav className='nav-wrapper amber accent-4'>
       <div className='container'>
         <Link to='/' className='brand-logo'>Home</Link>
-        <NavLink style={space} to='/dashboard' className='right'>Drinks Library</NavLink>
-        <NavLink style={space} to='/search' className='right'>Search Drinks</NavLink>
-        <NavLink style={space} to='/contribute' className='right'>Create Recipe</NavLink>
+        <NavLink style={space} to='/dashboard' className='right'>User Created Library</NavLink>
+        <NavLink style={space} to='/search' className='right'>Drinks Database</NavLink>
+        <NavLink style={space} to='/contribute' className='right'>Add Recipe</NavLink>
       </div>
     </nav>
   );

@@ -28,7 +28,8 @@ const RecipeDetails = (props) => {
     width: '40%',
     border: '1px solid #64b5f6',
     borderRadius: '5px',
-    padding: '0px 10px 10px 10px'
+    padding: '0px 10px 10px 10px',
+    boxShadow: '5px 5px 10px grey'
 
   }
   var padding2 = {
@@ -102,7 +103,7 @@ const RecipeDetails = (props) => {
 
             <div style={padding}>
               <span><h5><strong>Instructions</strong></h5></span>
-              <p>{ recipe.instructions }</p>
+              <p>{recipe.instructions}</p>
             </div>
 
           </div>
