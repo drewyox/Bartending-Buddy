@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom';
 const Navbar = () => {
 
   var space ={
-    paddingLeft: '5vw'
+    marginLeft: '5vw',
   }
 
   return(

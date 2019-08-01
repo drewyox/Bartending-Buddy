@@ -51,7 +51,9 @@ class CreateRecipe extends Component {
   }
   handleSubmit(e){
     e.preventDefault();
-    this.props.createRecipe(this.state)
+    this.props.createRecipe(this.state);
+    alert("You've successfully added your recipe!")
+    document.location.reload()
     // console.log(this.state);
   }
   render() {
@@ -60,11 +62,29 @@ class CreateRecipe extends Component {
       flexDirection: 'row',
       justifyContent: 'space around'
     }
+    var button={
+      backgroundColor: '#64b5f6',
+      width: 'auto',
+      padding: '5px 10px 5px 10px',
+      fontSize: '1.2em',
+      color: 'white',
+      fontWeight: 'lighter',
+      border: 'none',
+      marginBottom: '80px'
+
+    }
+    var title={
+      marginTop: '60px',
+      fontSize: '3.5em',
+      paddingBottom: '5vh',
+      fontWeight: 'lighter',
+      color: '#64b5f6',
+    }
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
 
-          <h5 className="grey-text text-darken-3">Add Your Recipe</h5>
+          <h5 style={title}>Add Your Recipe</h5>
 
           <div className="input-field">
             <label htmlFor="title">Name of Drink</label>
@@ -246,7 +266,7 @@ class CreateRecipe extends Component {
 
 
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Create</button>
+            <button style={button}>CREATE</button>
           </div>
         </form>
       </div>

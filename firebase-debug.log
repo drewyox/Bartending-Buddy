@@ -1,0 +1,25 @@
+[debug] [2019-08-01T01:02:16.215Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T01:02:16.219Z] Command:       /usr/local/Cellar/node/11.10.1/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-01T01:02:16.220Z] CLI Version:   7.2.2
+[debug] [2019-08-01T01:02:16.220Z] Platform:      darwin
+[debug] [2019-08-01T01:02:16.220Z] Node Version:  v11.10.1
+[debug] [2019-08-01T01:02:16.221Z] Time:          Wed Jul 31 2019 18:02:16 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-08-01T01:02:16.221Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-01T01:02:16.247Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T01:02:16.247Z] > authorizing via signed-in user
+[debug] [2019-08-01T01:02:16.248Z] [iam] checking project the-bar-library for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T01:02:16.251Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/the-bar-library:testIamPermissions  
+
+[debug] [2019-08-01T01:02:17.406Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T01:02:17.410Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/the-bar-library  
+ 
+[debug] [2019-08-01T01:02:17.616Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Yox/Desktop/Bartending-Buddy'...
+[info] 
+[debug] [2019-08-01T01:02:17.624Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/the-bar-library/webApps/-/config  
+ 
+[debug] [2019-08-01T01:02:17.830Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000

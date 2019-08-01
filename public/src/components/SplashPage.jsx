@@ -10,28 +10,33 @@ function SplashPage(){
     width: '100%',
     backgroundImage: `url(${barBackground})`,
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    backgroundAttachment: 'fixed'
   };
   var columnStyle = {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    margin: 'auto',
     marginTop: '13vh',
     marginBottom: '10vh',
-    fontSize: '1.5em'
+    fontSize: '1.5em',
+    width: '90vw'
   };
   var columnStyleR = {
-    marginRight: '40vw',
-    marginBottom: '10vw',
+    width: '60%',
+    alignSelf: 'flex-start',
+    marginBottom: '10vh',
     fontSize: '1.5em',
     borderBottom: '1px solid black'
 
   };
   var columnStyleL = {
-    marginLeft: '40vw',
+    width: '38%',
+    alignSelf: 'flex-end',
     marginBottom: '10vh',
     fontSize: '1.5em',
-    borderBottom: '1px solid black'
+    borderBottom: '1px solid black',
+    textAlign: 'right'
   };
 
   var titleStyle = {
@@ -48,6 +53,9 @@ function SplashPage(){
     borderRadius: '15px'
   }
 
+  var formatting = {
+    margin: '0px',
+  }
 
   var big ={
     fontSize: '2em',
@@ -59,19 +67,19 @@ function SplashPage(){
       <div style={backgroundBar}>
         <div style={columnStyle}>
           <div className='center-align' >
-            <p style={titleStyle} >Liquor Library</p>
+            <p style={titleStyle} >Bartending Buddy</p>
           </div>
         </div>
       </div>
       <div style={columnStyle}>
         <div style={columnStyleR}>
-          <span style={big}><Link to='/search'>Search</Link></span><p> through our database of established drink  recipes!</p>
+          <span style={big}><Link to='/search'>Search</Link></span><p style={formatting}> through our database of established drink  recipes!</p>
         </div>
         <div style={columnStyleL}>
-          <p>Browse our extensive user created</p> <span style={big}><Link to='/dashboard'>Drink Library</Link></span>
+          <p style={formatting}>Browse our extensive user created</p> <span style={big}><Link to='/dashboard'>Drink Library</Link></span>
         </div>
         <div style={columnStyleR}>
-          <Link style={big} to='/contribute'>Contribute</Link><p> to our ever growing libray of unique drinks!</p>
+          <Link style={big} to='/contribute'>Contribute</Link><p style={formatting}> to our ever growing library of unique drinks!</p>
         </div>
       </div>
     </div>

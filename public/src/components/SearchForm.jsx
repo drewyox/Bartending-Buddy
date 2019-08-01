@@ -11,6 +11,7 @@ class SearchForm extends React.Component{
     };
     this.searchByIngredient = this.searchByIngredient.bind(this);
     this.searchByName = this.searchByName.bind(this);
+    this.idHelper = this.idHelper.bind(this);
   }
 
 
@@ -33,14 +34,29 @@ class SearchForm extends React.Component{
         let drinky = json.drinks;
         Object.keys(drinky).forEach((element) => {
           dummyArray.push(drinky[element]);
-
         });
-        this.setState({ingredientResults: dummyArray});
-        console.log(this.state.ingredientResults);
+      dummyArray.forEach((element) => {
+        this.idHelper(element.idDrink);
+      })
+      this.setState({ingredientResults: dummyArray});
+      console.log(this.state.ingredientResults);
       }
     );
     this.resetArrayonIngredient();
   }
+
+idHelper(input){
+  let dummyArray = [];
+  let url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${input}`;
+  fetch(url).then(response => response.json()).then(
+    (json) => {
+      let drinkFID = dummyArray.push(json.drinks);
+
+      console.log(drinkFID);
+    }
+  );
+  console.log(dummyArray);
+}
 
   searchByName(input){
     let dummyArrayName = [];
@@ -59,7 +75,6 @@ class SearchForm extends React.Component{
   }
 
   clearField(){
-    this.refs.ingField.value='';
     this.refs.nameField.value='';
   }
 
@@ -68,10 +83,11 @@ class SearchForm extends React.Component{
 
     var text = {
       width: '60%',
-      marginTop: '3vh',
-      marginBottom: '4vh',
-      marginLeft: '10vh',
-
+      margin: 'auto',
+      marginTop: '120px',
+      display: 'flex',
+      justifyContent: 'center',
+      textAlign: 'center'
     }
 
     var textRefine = {
@@ -96,24 +112,9 @@ var border= {
     return(
       <div>
         <div style={text}>
-          <h3 style={textRefine}>Looking to expand your repertoire? Search by ingredient and then look up a name that grabs your eye!</h3><br></br>
-          <h5 style={textRefine}>Or if you know what you're looking for, just search the name of a drink!</h5>
+          <h3 style={textRefine}>Enter a cocktail below to find your recipe!</h3><br></br>
         </div>
         <div style={row}>
-          <form style={border}>
-              <label>
-              Search By Ingredient:
-                <input type='text' id='inputValue' ref='ingField'/>
-              </label>
-              <button type='submit' onClick={() =>{
-                console.log(document.getElementById('inputValue').value);
-                let input = document.getElementById('inputValue').value;
-                this.searchByIngredient(input);
-                this.clearField();
-              }}>Search!</button>
-          </form>
-
-          <h4>Or</h4>
           <form style={border}>
             <label>
             Search By Name:

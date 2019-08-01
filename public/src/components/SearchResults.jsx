@@ -7,10 +7,6 @@ import DrinkByIngredient from './DrinkByIngredient';
 
 function SearchResults(props){
 
-
-
-
-
   return(
     <div>
       <div>
