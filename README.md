@@ -13,17 +13,21 @@ This is the Bartending Buddy. This app is designed to help anybody make professi
 ##
 
 
-## MVP FOR CAPSTONE
+## INSTRUCTIONS
 
-Goals | Finished?
-----------|----------|
-Include search feature for drink by name | Not Yet
-Include top 10 drink example API calls | Not Yet
-Ability to add and edit posts of your own drink recipe | Not Yet
-Ability to delete posts as an admin | Not Yet
-Ability to save and share inputted posts publically | Not Yet
-Clean and intuitive design | Not Yet
-Animations based on drink proportions found in recipe | Not Yet
+If you would like to view and interact with this project please:
+
+
+Make sure you have NodeJS installed on your machine before attempting to use
+Clone the project to your machine
+Run npm install in you command line
+Then within the comman line type and execute: npm run start
+Open your browser and navigate to http://localhost:8080
+Make your favorite cocktail!
+
+
+
+
 
 
 ## STRETCH GOALS
