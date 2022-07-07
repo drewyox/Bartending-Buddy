@@ -29,7 +29,7 @@
     "css-loader": "^2.1.1",
     "firebase": "^6.0.2",
     "materialize-css": "^1.0.0-rc.2",
-    "moment": "^2.18.1",
+    "moment": "^2.29.4",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
