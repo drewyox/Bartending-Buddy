@@ -40,7 +40,7 @@
     "redux-firestore": "^0.8.0",
     "redux-thunk": "^2.3.0",
     "style-loader": "^0.23.1",
-    "styled-jsx": "^3.2.1",
+    "styled-jsx": "^5.1.0",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-react": "^7.12.4",
     "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^2.29.0",
+    "html-webpack-plugin": "^5.5.0",
     "node-sass": "^4.11.0",
     "react-hot-loader": "^3.0.0-beta.7",
     "sass-lint": "^1.12.1",
